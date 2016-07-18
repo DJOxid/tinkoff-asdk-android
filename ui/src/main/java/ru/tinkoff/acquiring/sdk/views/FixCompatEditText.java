@@ -22,7 +22,7 @@ import android.widget.EditText;
 
 /**
  * @author a.shishkin1
- *         <p/>
+ *         <p></p>
  *         Поскольку поле ввода номера карты должно выглядеть как все поля ввода на экране
  *         и не имеет Compat реализации с поддержкой TintableBackgroundView в sdk используются
  *         обычные EditText, а не AppCompatEditText. Поскольку андроид во время inflate подменяет
