@@ -82,7 +82,9 @@ SDK состоит из следующих модулей
 [build-config]: https://developer.android.com/studio/build/index.html
 [support-email]: mailto:card_acquiring@tinkoff.ru
 [issues]: https://github.com/TinkoffCreditSystems/tinkoff-asdk-android/issues
-[img-pay]: http://TODO
 [acquiring]: https://t.tinkoff.ru/
-[acquiring-sdk-javadoc]: http://link-to-java-doc
-[payform-javadoc]: http://link-to-java-doc
+[acquiring-sdk-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
+[payform-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
+
+[img-pay]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/pay.png
+[img-keyboard]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/keyboard.png
