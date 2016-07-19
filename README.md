@@ -2,6 +2,8 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/ru.tinkoff.acquiring/ui.svg?maxAge=2592000)][search.maven]
 
+![PayFormActivity][img-pay]
+
 Acquiring SDK позволяет интегрировать [Интернет-Эквайринг Tinkoff][acquiring] в мобильные приложения для платформы Android.
 
 Возможности SDK:
@@ -10,8 +12,6 @@ Acquiring SDK позволяет интегрировать [Интернет-Э
 - Сканирование и распознавание карт с помощью камеры или NFC
 - Получение информации о клиенте и сохраненных картах
 - Управление сохраненными картами
-
-![PayFormActivity][img-pay]
 
 ### Требования
 Для работы Tinkoff Acquiring SDK необходим Android версии 4.0 и выше (API level 14)
@@ -88,5 +88,5 @@ SDK состоит из следующих модулей
 [acquiring-sdk-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
 [payform-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
 
-[img-pay]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/pay1.png
-[img-keyboard]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/keyboard1.png
+[img-pay]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/pay2.png
+[img-keyboard]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/keyboard2.png
