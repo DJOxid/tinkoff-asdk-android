@@ -11,7 +11,6 @@ Acquiring SDK позволяет интегрировать [Интернет-Э
 - Получение информации о клиенте и сохраненных картах
 - Управление сохраненными картами
 
-<img src="res/pay.png" width="50%"
 ![PayFormActivity][img-pay]
 
 ### Требования
@@ -89,5 +88,5 @@ SDK состоит из следующих модулей
 [acquiring-sdk-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
 [payform-javadoc]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/javadoc/
 
-[img-pay]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/pay0.png
-[img-keyboard]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/keyboard0.png
+[img-pay]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/pay1.png
+[img-keyboard]: http://tinkoffcreditsystems.github.io/tinkoff-asdk-android/res/keyboard1.png
