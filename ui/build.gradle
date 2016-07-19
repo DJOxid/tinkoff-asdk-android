@@ -13,8 +13,8 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.3'
+    compileSdkVersion rootProject.targetSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
 
     lintOptions {
         disable 'InvalidPackage'
@@ -28,8 +28,8 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode Integer.parseInt(VERSION_CODE)
         versionName VERSION_NAME
     }

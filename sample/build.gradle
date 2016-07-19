@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
 
-
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.3'
+    compileSdkVersion rootProject.targetSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -24,8 +23,8 @@ android {
 
     defaultConfig {
         applicationId "ru.tinkoff.acquiring.sample"
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode 12
         versionName "1.0"
     }

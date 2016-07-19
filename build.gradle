@@ -1,3 +1,5 @@
+apply from: "gradle/versions.gradle"
+
 buildscript {
     repositories {
         jcenter()
@@ -13,6 +15,35 @@ allprojects {
     }
 }
 
+configurations {
+    javaDocs
+}
+
+dependencies {
+    javaDocs project(":core")
+    javaDocs project(":ui")
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+task genJavadoc (type: Javadoc) {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def sdkDir = properties.getProperty('sdk.dir')
+
+    classpath = files("$sdkDir/platforms/android-${targetSdkVersion}/android.jar")
+    options.charSet = "utf-8"
+    options.encoding = "utf-8"
+    options.docEncoding = "utf-8"
+    destinationDir = file("./javadoc/")
+    title = "Tinkoff ASDK Javadoc"
+
+    source += file("core/src/main/java/ru/tinkoff/acquiring/sdk/AcquiringSdk.java")
+    source += file("core/src/main/java/ru/tinkoff/acquiring/sdk/AcquiringSdkException.java")
+    source += file("core/src/main/java/ru/tinkoff/acquiring/sdk/AcquiringApiException.java")
+    source += file("core/src/main/java/ru/tinkoff/acquiring/sdk/Logger.java")
+    source += file("core/src/main/java/ru/tinkoff/acquiring/sdk/Journal.java")
+    source += file("ui/src/main/java/ru/tinkoff/acquiring/sdk/PayFormActivity.java")
 }
